@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-md-6 m-auto">
+        <div class="container mt-5 pl-5">
+            <h2 class="text-center">Register</h2>
+             {{#if loginErr}}
+             <p>invalid username or password</p>
+             {{/if}}
+
+            <form action="/submit" method="POST">
+                <div class="form-group">
+ 
+                    <label for="">Username</label>
+                    <input type="text" class="form-control" name="Username" placeholder="Enter Username">
+
+                    <label for="">Lastname</label>
+                    <input type="text" class="form-control" name="Lastname" placeholder="Enter Lastname ">
+
+                    <label for="">Phone Number</label>
+                    <input type="tel" class="form-control" name="Phone" placeholder="Enter Phone Number">
+
+                    <label for="">Address</label>
+                    <input type="text" class="form-control" name="Address" placeholder="Enter Address">
+
+                     
+                     
+                    
+                    
+                    
+                    <label for="">Email address</label>
+                    <input type="email" class="form-control" name="Email" placeholder="Enter Email">
+
+                
+                
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="Password" placeholder="Password">
+
+                    </div>
+                    <a href="/login">Already have account ?</a>
+                    <button type="submit" class="btn btn-primary float-right">Submit</button>
+                
+            </form>
+        </div>
+    </div>
+</div>
